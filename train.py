@@ -110,7 +110,7 @@ y_test = lb.fit_transform(y_test)
 
 y_train = keras.utils.to_categorical(y_train)
 y_test = keras.utils.to_categorical(y_test)
-model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
+#model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 model.fit(x_train, y_train,
           batch_size=batch_size,
           epochs=epochs,
